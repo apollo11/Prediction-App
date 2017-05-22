@@ -1,0 +1,45 @@
+// ==== VARIABLE FONTS
+$base-font:          'Lasiver Regular', Helvetica, Arial, sans-serif;
+$base-font-medium:   'Lasiver Medium', Helvetica, Arial, sans-serif;
+$base-font-bold:     'Lasiver Bold', Helvetica, Arial, sans-serif;
+$base-font-light:    'Lasiver Light', Helvetica, Arial, sans-serif;
+
+$border-width:      3px;
+$highlight-color:   #ffa500; //#008000;
+$secondary-color:   #008836;
+
+
+// MEDIA QUERY
+    $breakpoints: (
+        phone:         400px,
+        phone-wide:    480px,
+        phablet:       560px,
+        tablet-small:  640px,
+        tablet:        768px,
+        tablet-wide:   1024px,
+        desktop-small: 980px,
+        desktop:       1248px,
+        desktop-wide:  1550px,
+        super-wide:    1720px
+    );
+    @mixin mq($width, $type: min) {
+        @if map_has_key($breakpoints, $width) {
+            $width: map_get($breakpoints, $width);
+            @if $type == max {
+                $width: $width; // - 1px;
+            }
+            @media only screen and (#{$type}-width: $width) {
+                @content;
+            }
+        }
+    }
+
+    
+// Placeholders
+    @mixin input-placeholder {
+        &.placeholder { @content; }
+        &:-moz-placeholder { @content; }
+        &::-moz-placeholder { @content; }
+        &:-ms-input-placeholder { @content; }
+        &::-webkit-input-placeholder { @content; }
+    }

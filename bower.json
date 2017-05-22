@@ -1,0 +1,22 @@
+{
+  "name": "football",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jonathan Manas <jonathanmanas@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "interactjs": "^1.2.8",
+    "dragula.js": "dragula#^3.7.2"
+  }
+}

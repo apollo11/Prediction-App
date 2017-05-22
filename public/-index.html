@@ -1,0 +1,194 @@
+<!doctype html>
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if !IE]>-->       <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Title</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" href="assets/css/style.min.css">
+    </head>
+    <body>
+    
+        <div class="page">
+            <div class="page__wrapper">
+
+                <div class="header">
+                    <h1>Football Prediction</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit provident obcaecati reiciendis, asperiores ducimus officia laudantium, doloremque modi architecto eveniet fugit ut omnis corrupti animi quia dolore accusamus. Repellat, est!</p>
+                </div>
+                <div class="game__board">
+                    <div class="game__matches game__matches--left">
+                        <div class="game__match" data-match="1">
+                            <div class="slot" data-team="Arsenal">
+                                <div class="slot__logo">
+                                    <img src="assets/images/logos/arsenal.png" alt="Arsenal" />
+                                </div>
+                                <div class="slot__name">
+                                    Arsenal
+                                </div>
+                            </div>
+                            <div class="slot" data-team="Barcelona">
+                                <div class="slot__logo">
+                                    <img src="assets/images/logos/barcelona.png" alt="Barcelona" />
+                                </div>
+                                <div class="slot__name">
+                                    Barcelona
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game__match" data-match="2">
+                            <div class="slot" data-team="Liverpool">
+                                <div class="slot__logo">
+                                    i
+                                </div>
+                                <div class="slot__name">
+                                    Liverpool
+                                </div>
+                            </div>
+                            <div class="slot" data-team="Manchester United">
+                                <div class="slot__logo">
+                                    i
+                                </div>
+                                <div class="slot__name">
+                                    Manchester United
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps step--one">
+                            <div class="step__title">Step 1</div>
+                            <div class="step__text">Choose the teams that will advance to the next round.</div>
+                            <div class="step__arrow animated bounce"></div>
+                        </div>
+                    </div>
+                    <div class="game__matches game__matches--right">
+                        <div class="game__match" data-match="3">
+                            <div class="slot" data-team="Chelsea">
+                                <div class="slot__logo">
+                                    i
+                                </div>
+                                <div class="slot__name">
+                                    Chelsea
+                                </div>
+                            </div>
+                            <div class="slot" data-team="Southampton">
+                                <div class="slot__logo">
+                                    i
+                                </div>
+                                <div class="slot__name">
+                                    Southampton
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game__match" data-match="4">
+                            <div class="slot" data-team="Crystal Palace">
+                                <div class="slot__logo">
+                                    i
+                                </div>
+                                <div class="slot__name">
+                                    Crystal Palace
+                                </div>
+                            </div>
+                            <div class="slot" data-team="Leicester City">
+                                <div class="slot__logo">
+                                    i
+                                </div>
+                                <div class="slot__name">
+                                    Leicester City
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps step--one">
+                            <div class="step__title">Step 1</div>
+                            <div class="step__text">Choose the teams that will advance to the next round.</div>
+                            <div class="step__arrow animated bounce"></div>
+                        </div>
+                    </div>
+                    <div class="game__board-wrapper">
+                        <div class="game__ranking">
+                            <p class="title">Predict Your Team's Ranking</p>
+                            <div class="ranking__label">
+                                <div>
+                                    <img src="assets/images/trophy-gold.png" alt="Gold">
+                                </div>
+                                <div>
+                                    <img src="assets/images/trophy-silver.png" alt="Silver">
+                                </div>
+                                <div>
+                                    <img src="assets/images/trophy-bronze.png" alt="Bronze">
+                                </div>
+                                <!--<div>
+                                    <span>3rd Place</span>
+                                </div>-->
+                            </div>
+                            <div id="gameFinalRank" class="ranking__list">
+                                <div class="ranking__container"></div>
+                                <div class="ranking__container"></div>
+                                <div class="ranking__container"></div>
+                                <div class="ranking__container"></div>
+                            </div>
+                        </div>
+                        <div class="game__options">
+                            <div id="gameFinalFour" class="game__options-list">
+                                <div class="finalist__container"></div>
+                                <div class="finalist__container"></div>
+                                <div class="finalist__container"></div>
+                                <div class="finalist__container"></div>
+                            </div>
+                        </div>
+                        <div class="steps step--two">
+                            <div class="step__title">Step 2</div>
+                            <div class="step__text">Choose the team's ranking.</div>
+                            <div class="step__arrow animated bounce"></div>
+                        </div>
+                    </div>
+                    <div class="game__form">
+                        <p class="form__alert form__alert--success">Your entry is submiited. Goodluck!</p>
+                        <p class="form__alert form__alert--error">Something went wrong. Please submit again.</p>
+                        <form action="#">
+                            <div class="form__item">
+                                <input type="text" value="" placeholder="Enter your username" class="form__input" />
+                                <p>Not yet registered? <a href="http://orange88.com" title="Sign-up" target="_blank">Click here</a></p>
+                            </div>
+                            <div class="form__item">
+                                <button role="button" class="form__submit js-submit" disabled>
+                                    <span class="text">Submit</span>
+                                    <span class="spinner"></span>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="steps step--three">
+                            <div class="step__title">Step 3</div>
+                            <div class="step__text">Enter your username and click submit.</div>
+                            <div class="step__arrow animated bounce"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="game__guide">
+                    <div class="steps step--one">
+                        <div class="step__title">Step 1</div>
+                        <div class="step__text">Choose the teams that will advance to the next round.</div>
+                    </div>
+                    <div class="steps step--two">
+                        <div class="step__title">Step 2</div>
+                        <div class="step__text">Choose the team's ranking.</div>
+                    </div>
+                    <div class="steps step--two">
+                        <div class="step__title">Step 3</div>
+                        <div class="step__text">Enter your username and click submit.</div>
+                    </div>
+                </div>-->
+
+            </div>
+        </div>
+
+        <script src="assets/js/vendor/jquery.min.js"></script>
+        <script src="assets/js/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
+</html>
